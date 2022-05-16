@@ -7,7 +7,7 @@
         <repository>
             <id>local-release-repository</id>
             <name>Local Release Repository</name>
-            <url>file:///C:\Users\Sonny\.m2\repository</url>
+            <url>file:///c:/Users/Sonny/.m2/repository</url>
         </repository>
     </distributionManagement>
 
