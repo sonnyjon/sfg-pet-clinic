@@ -7,7 +7,7 @@
         <repository>
             <id>local-release-repository</id>
             <name>Local Release Repository</name>
-            <url>file:///C:/Workspace/java/spring/spring-framework5/course-projects/sfg-pet-clinic</url>
+            <url>file:///C:\Workspace\java\spring\spring-framework5\course-projects\sfg-pet-clinic</url>
         </repository>
     </distributionManagement>
 
