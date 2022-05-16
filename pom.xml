@@ -21,9 +21,6 @@
     <properties>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
-
-    </dependencies>
 
     <build>
         <plugins>
@@ -39,7 +36,19 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/sonnyjon/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
