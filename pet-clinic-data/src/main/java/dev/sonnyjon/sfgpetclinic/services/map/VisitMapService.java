@@ -4,6 +4,7 @@ import dev.sonnyjon.sfgpetclinic.model.Owner;
 import dev.sonnyjon.sfgpetclinic.model.Pet;
 import dev.sonnyjon.sfgpetclinic.model.Visit;
 import dev.sonnyjon.sfgpetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -12,6 +13,7 @@ import java.util.Set;
  * Created by Sonny on 6/1/2022.
  */
 @Service
+@Profile({"default", "map"})
 public class VisitMapService
     extends AbstractMapService<Visit, Long>
     implements VisitService
