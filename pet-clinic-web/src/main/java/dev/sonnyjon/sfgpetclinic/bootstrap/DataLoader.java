@@ -11,8 +11,8 @@ import java.time.LocalDate;
  * Created by Sonny on 5/23/2022.
  */
 @Component
-public class DataLoader implements CommandLineRunner {
-
+public class DataLoader implements CommandLineRunner
+{
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
