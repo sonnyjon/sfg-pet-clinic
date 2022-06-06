@@ -26,13 +26,19 @@ public class OwnerMapService
     }
 
     @Override
-    public Set<Owner> findAll() {
+    public Set<Owner> findAll()
+    {
         return super.findAll();
     }
 
     @Override
-    public Owner findByLastName(String lastName) {
-        return null;
+    public Owner findByLastName(String lastName)
+    {
+        return this.findAll()
+                    .stream()
+                    .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                    .findFirst()
+                    .orElse(null);
     }
 
     @Override
