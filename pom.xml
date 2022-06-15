@@ -28,8 +28,27 @@
     <description>sfg-pet-clinic</description>
     <properties>
         <java.version>11</java.version>
+        <jaxb.version>2.3.0</jaxb.version>
         <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
